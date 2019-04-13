@@ -22,11 +22,7 @@ The workshop consists of 4 hands-on lab sessions:
 Follow instructions here: [Registration and Deployment lab](https://github.com/mahendrabairagi/DeeplensWorkshop/tree/master/Registration%20and%20project%20deployment)
 
 
-# Hands-on Step 2: Build and train a face detection model in SageMaker
-
-In this lab, you will build and train a face detection model. Follow instructions here: [SageMaker lab](https://github.com/mahendrabairagi/DeeplensWorkshop/tree/master/SageMaker%20lab)
-
-# Hands-on Step 3: Build a project to detect faces and send the cropped faces to S3 bucket
+# Hands-on Step 2: Build a project to detect faces and send the cropped faces to S3 bucket
 
 #### IAM Roles: (Optional step - if IAM role exists then skip this step)
 
@@ -49,6 +45,10 @@ Go to [AWS Management console](https://console.aws.amazon.com/console/home?regio
 Choose 'Create bucket'
 
 Name your bucket : face-detection-your-name
+
+Hit 'Next' twice to go to the "permissions" tab.
+
+Uncheck the four boxes, two under "Manage public access control lists (ACLs) for this bucket" and two under "Manage public bucket policies for this bucket"
 
 Click on Create 
 
@@ -326,7 +326,7 @@ You will find your cropped faces uplaod to your S3 bucket.
 
 
 
-# Hands-on Step 4: Identify emotions
+# Hands-on Step 3: Identify emotions
 
 **Step I- Create DynamoDB table**
 
